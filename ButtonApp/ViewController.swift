@@ -13,9 +13,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var numberView: UILabel!
     
     var score = 0
+    let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        score = defaults.integer(forKey: "counterKey")
+        numberView.text = "\(score)"
+        
         // Do any additional setup after loading the view, typically from a nib.
     
     }
@@ -35,7 +39,8 @@ class ViewController: UIViewController {
         
         // Update Label
         numberView.text = String(score)
-        
+        defaults.set(score, forKey: "counterKey")
+
     }
     
 }
