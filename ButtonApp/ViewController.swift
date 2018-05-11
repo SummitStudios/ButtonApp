@@ -9,6 +9,21 @@
 import UIKit
 import AVFoundation
 import AudioToolbox
+import Foundation
+
+let calendar = Calendar.current
+let now = Date()
+let twopm_today = calendar.date(
+    bySettingHour: 14,
+    minute: 0,
+    second: 0,
+    of: now)!
+
+let four_thirty_today = calendar.date(
+    bySettingHour: 16,
+    minute: 30,
+    second: 0,
+    of: now)!
 
 class ViewController: UIViewController {
 
@@ -21,6 +36,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         score = defaults.integer(forKey: "counterKey")
         numberView.text = String(score)
         
@@ -37,11 +53,16 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+  
     @IBAction func buttonPressed(_ sender: Any) {
         
+        if now >= twopm_today &&
+            now <= four_thirty_today
+        {
+
         // Button Pressed Print result
-        print("spank me daddy")
+        print("button pressed")
         
         // Update Score
         score += 1
@@ -52,7 +73,14 @@ class ViewController: UIViewController {
         
         // Play Sound
         audioPlayer.play()
-
+            
+        // Lock Button
+        Timer.scheduledTimer(timeInterval: 90, target: self, selector: (Selector(("enableButton"))), userInfo: nil, repeats: false)
+            
+        }
+        else{
+            print("no button press")
+        }
     }
     
 }
