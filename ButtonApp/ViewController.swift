@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         score = defaults.integer(forKey: "counterKey")
-        numberView.text = "\(score)"
+        numberView.text = String(score)
         
         // Do any additional setup after loading the view, typically from a nib.
     
