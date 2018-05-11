@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FA7B7F020A5776100307138 /* pointSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA7B7EF20A5776100307138 /* pointSound.mp3 */; };
 		4FB9408520A53A370028F7BE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FB9408420A53A370028F7BE /* AudioToolbox.framework */; };
 		4FB9408720A53A590028F7BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FB9408620A53A590028F7BE /* Foundation.framework */; };
 		4FB9408920A53AEA0028F7BE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FB9408820A53AEA0028F7BE /* AVFoundation.framework */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4FA7B7EF20A5776100307138 /* pointSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pointSound.mp3; sourceTree = "<group>"; };
 		4FB9408420A53A370028F7BE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		4FB9408620A53A590028F7BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4FB9408820A53AEA0028F7BE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -64,12 +66,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4FB9408E20A53D7A0028F7BE /* New Group */ = {
+		4FB9408E20A53D7A0028F7BE /* Music */ = {
 			isa = PBXGroup;
 			children = (
+				4FA7B7EF20A5776100307138 /* pointSound.mp3 */,
 				4FB9408F20A53DAA0028F7BE /* pointSound.wav */,
 			);
-			path = "New Group";
+			path = Music;
 			sourceTree = "<group>";
 		};
 		4FFDA15E20A4D8A800E3BD7A = {
@@ -96,7 +99,7 @@
 				4FFDA16C20A4D8A800E3BD7A /* ViewController.swift */,
 				4FFDA16E20A4D8A800E3BD7A /* Main.storyboard */,
 				4FFDA17120A4D8AA00E3BD7A /* Assets.xcassets */,
-				4FB9408E20A53D7A0028F7BE /* New Group */,
+				4FB9408E20A53D7A0028F7BE /* Music */,
 				4FFDA17320A4D8AA00E3BD7A /* LaunchScreen.storyboard */,
 				4FFDA17620A4D8AA00E3BD7A /* Info.plist */,
 			);
@@ -165,6 +168,7 @@
 				4FB9409020A53DAA0028F7BE /* pointSound.wav in Resources */,
 				4FFDA17220A4D8AA00E3BD7A /* Assets.xcassets in Resources */,
 				4FFDA17020A4D8A800E3BD7A /* Main.storyboard in Resources */,
+				4FA7B7F020A5776100307138 /* pointSound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

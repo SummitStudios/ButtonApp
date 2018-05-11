@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         numberView.text = String(score)
         
         do {
-            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "pointSound", ofType: "wav")!))
+            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "pointSound", ofType: "mp3")!))
             audioPlayer.prepareToPlay()
         }
         catch{
