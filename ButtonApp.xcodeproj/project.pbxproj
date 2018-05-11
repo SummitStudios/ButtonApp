@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FB9408520A53A370028F7BE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FB9408420A53A370028F7BE /* AudioToolbox.framework */; };
+		4FB9408720A53A590028F7BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FB9408620A53A590028F7BE /* Foundation.framework */; };
+		4FB9408920A53AEA0028F7BE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FB9408820A53AEA0028F7BE /* AVFoundation.framework */; };
+		4FB9408B20A53AF20028F7BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FB9408A20A53AF20028F7BE /* CoreGraphics.framework */; };
+		4FB9408D20A53B080028F7BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FB9408C20A53B070028F7BE /* UIKit.framework */; };
+		4FB9409020A53DAA0028F7BE /* pointSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4FB9408F20A53DAA0028F7BE /* pointSound.wav */; };
 		4FFDA16B20A4D8A800E3BD7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFDA16A20A4D8A800E3BD7A /* AppDelegate.swift */; };
 		4FFDA16D20A4D8A800E3BD7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFDA16C20A4D8A800E3BD7A /* ViewController.swift */; };
 		4FFDA17020A4D8A800E3BD7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FFDA16E20A4D8A800E3BD7A /* Main.storyboard */; };
@@ -15,6 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4FB9408420A53A370028F7BE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4FB9408620A53A590028F7BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4FB9408820A53AEA0028F7BE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4FB9408A20A53AF20028F7BE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4FB9408C20A53B070028F7BE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4FB9408F20A53DAA0028F7BE /* pointSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pointSound.wav; sourceTree = "<group>"; };
 		4FFDA16720A4D8A800E3BD7A /* ButtonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButtonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FFDA16A20A4D8A800E3BD7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FFDA16C20A4D8A800E3BD7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +41,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FB9408D20A53B080028F7BE /* UIKit.framework in Frameworks */,
+				4FB9408B20A53AF20028F7BE /* CoreGraphics.framework in Frameworks */,
+				4FB9408920A53AEA0028F7BE /* AVFoundation.framework in Frameworks */,
+				4FB9408720A53A590028F7BE /* Foundation.framework in Frameworks */,
+				4FB9408520A53A370028F7BE /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FB9408320A53A370028F7BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FB9408C20A53B070028F7BE /* UIKit.framework */,
+				4FB9408A20A53AF20028F7BE /* CoreGraphics.framework */,
+				4FB9408820A53AEA0028F7BE /* AVFoundation.framework */,
+				4FB9408620A53A590028F7BE /* Foundation.framework */,
+				4FB9408420A53A370028F7BE /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4FB9408E20A53D7A0028F7BE /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				4FB9408F20A53DAA0028F7BE /* pointSound.wav */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		4FFDA15E20A4D8A800E3BD7A = {
 			isa = PBXGroup;
 			children = (
 				4FFDA16920A4D8A800E3BD7A /* ButtonApp */,
 				4FFDA16820A4D8A800E3BD7A /* Products */,
+				4FB9408320A53A370028F7BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +96,7 @@
 				4FFDA16C20A4D8A800E3BD7A /* ViewController.swift */,
 				4FFDA16E20A4D8A800E3BD7A /* Main.storyboard */,
 				4FFDA17120A4D8AA00E3BD7A /* Assets.xcassets */,
+				4FB9408E20A53D7A0028F7BE /* New Group */,
 				4FFDA17320A4D8AA00E3BD7A /* LaunchScreen.storyboard */,
 				4FFDA17620A4D8AA00E3BD7A /* Info.plist */,
 			);
@@ -123,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FFDA17520A4D8AA00E3BD7A /* LaunchScreen.storyboard in Resources */,
+				4FB9409020A53DAA0028F7BE /* pointSound.wav in Resources */,
 				4FFDA17220A4D8AA00E3BD7A /* Assets.xcassets in Resources */,
 				4FFDA17020A4D8A800E3BD7A /* Main.storyboard in Resources */,
 			);

@@ -7,10 +7,14 @@
 //
 
 import UIKit
+import AVFoundation
+import AudioToolbox
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var numberView: UILabel!
+    
+    var audioPlayer: AVAudioPlayer!
     
     var score = 0
     let defaults = UserDefaults.standard
@@ -20,8 +24,13 @@ class ViewController: UIViewController {
         score = defaults.integer(forKey: "counterKey")
         numberView.text = String(score)
         
-        // Do any additional setup after loading the view, typically from a nib.
-    
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "pointSound", ofType: "wav")!))
+            audioPlayer.prepareToPlay()
+        }
+        catch{
+            print(error)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,6 +49,9 @@ class ViewController: UIViewController {
         // Update Label
         numberView.text = String(score)
         defaults.set(score, forKey: "counterKey")
+        
+        // Play Sound
+        audioPlayer.play()
 
     }
     
